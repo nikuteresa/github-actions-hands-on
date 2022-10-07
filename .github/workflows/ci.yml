@@ -12,6 +12,7 @@ jobs:
           node-version: 14.x
       - run: npm ci
       - run: npm run lint
+      - run: npm test
   build:
     name: Docker Build
     needs: [lint_and_test]
